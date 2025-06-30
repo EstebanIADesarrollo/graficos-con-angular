@@ -1,6 +1,6 @@
 .title-container {
   text-align: center;
-  padding: 2em;
+  padding: 2em 2em 0.5em 2em; /* Reduced bottom padding */
 }
 
 h1 {
@@ -13,7 +13,7 @@ h1 {
     font-size: 2rem;
   }
   .title-container {
-    padding: 1.5em;
+    padding: 1.5em 1.5em 0.5em 1.5em; /* Reduced bottom padding */
   }
 }
 
@@ -22,22 +22,19 @@ h1 {
     font-size: 1.5rem;
   }
   .title-container {
-    padding: 1em;
+    padding: 1em 1em 0.5em 1em; /* Reduced bottom padding */
   }
 }
 
 .components-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start; /* Align items to the start of the cross axis */
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
-  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+  gap: 1rem;
+  padding: 0.5em 1em 1em 1em;
 }
 
-/* Responsive adjustments for components */
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
   .components-container {
-    flex-direction: column;
-    align-items: center; /* Center items when in column layout */
+    grid-template-columns: 1fr; /* Una columna en móvil */
   }
 }
