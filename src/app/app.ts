@@ -10,4 +10,11 @@ import { Graficos } from './components/graficos/graficos';
 })
 export class App {
   protected title = 'graficos';
+  acumuladoMensualData: number[] = [];
+  acumuladoConInteresData: number[] = [];
+
+  onDatosSimulacion(data: { acumuladoMensual: number[], acumuladoConInteres: number[] }) {
+    this.acumuladoMensualData = data.acumuladoMensual;
+    this.acumuladoConInteresData = data.acumuladoConInteres;
+  }
 }

@@ -1,5 +1,13 @@
-<p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</p>
+<div>
+  <h2>Resultados de la Simulación</h2>
+  <ul *ngIf="acumuladoMensual.length > 0">
+    <li *ngFor="let mensual of acumuladoMensual; let i = index">
+      Periodo {{ i + 1 }}:
+      <ul>
+        <li>Acumulado Mensual: {{ mensual | number:'1.2-2' }}</li>
+        <li>Acumulado con Interés: {{ acumuladoConInteres[i] | number:'1.2-2' }}</li>
+      </ul>
+    </li>
+  </ul>
+  <p *ngIf="acumuladoMensual.length === 0">No hay datos para mostrar. Por favor, simule en el formulario.</p>
+</div>

@@ -1,14 +1,15 @@
 <form>
   <div>
     <label for="periodo">Periodo:</label>
-    <input id="periodo" type="number" [formControl]="periodo()">
+    <input id="periodo" type="number" [formControl]="periodo()" placeholder="Periodo en meses">
   </div>
   <div>
     <label for="cuota">Cuota:</label>
-    <input id="cuota" type="number" [formControl]="cuota()">
+    <input id="cuota" type="number" [formControl]="cuota()" placeholder="Cuota mensual">
   </div>
   <div>
     <label for="tasa">Tasa:</label>
-    <input id="tasa" type="number" [formControl]="tasa()">
+    <input id="tasa" type="number" [formControl]="tasa()" placeholder="Tasa efectiva anual (%)">
   </div>
+  <button type="button" (click)="simular()">Simular</button>
 </form>

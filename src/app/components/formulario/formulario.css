@@ -1,7 +1,39 @@
-p {
+form {
   background-color: #018786;
   color: white;
   padding: 1em;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form div {
+  margin-bottom: 1em;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+form input[type="number"] {
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+form button {
+  background-color: #005656; /* Darker shade for button */
+  color: white;
+  padding: 0.7em 1.5em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.1s ease; /* Smooth transition for the effect */
+}
+
+form button:active {
+  transform: translateY(2px); /* Move button down slightly */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Smaller shadow for pressed effect */
 }
