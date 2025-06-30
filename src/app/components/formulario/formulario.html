@@ -1,5 +1,14 @@
-<p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</p>
+<form>
+  <div>
+    <label for="periodo">Periodo:</label>
+    <input id="periodo" type="number" [formControl]="periodo()">
+  </div>
+  <div>
+    <label for="cuota">Cuota:</label>
+    <input id="cuota" type="number" [formControl]="cuota()">
+  </div>
+  <div>
+    <label for="tasa">Tasa:</label>
+    <input id="tasa" type="number" [formControl]="tasa()">
+  </div>
+</form>
