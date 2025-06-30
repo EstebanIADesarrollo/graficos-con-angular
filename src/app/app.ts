@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Formulario } from './components/formulario/formulario';
+import { Graficos } from './components/graficos/graficos';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [Formulario, Graficos],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

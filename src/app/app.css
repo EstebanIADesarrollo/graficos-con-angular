@@ -7,7 +7,7 @@ h1 {
   font-size: 2.5rem; /* Default font size */
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments for title */
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem;
@@ -23,5 +23,21 @@ h1 {
   }
   .title-container {
     padding: 1em;
+  }
+}
+
+.components-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; /* Align items to the start of the cross axis */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  padding: 1em;
+}
+
+/* Responsive adjustments for components */
+@media (max-width: 768px) {
+  .components-container {
+    flex-direction: column;
+    align-items: center; /* Center items when in column layout */
   }
 }
