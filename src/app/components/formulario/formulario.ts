@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './formulario.css'
 })
 export class Formulario {
-  periodo = signal(new FormControl<number | null>(null, Validators.max(240)));
+  periodo = signal(new FormControl<number | null>(null, Validators.max(360)));
   cuota = signal(new FormControl<number | null>(null));
   tasa = signal(new FormControl<number | null>(null));
 

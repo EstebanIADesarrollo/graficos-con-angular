@@ -4,7 +4,7 @@
     <input id="periodo" type="number" [formControl]="periodo()" placeholder="Periodo en meses">
     <div *ngIf="periodo().invalid && (periodo().dirty || periodo().touched)" class="error-message">
       <div *ngIf="periodo().errors?.['max']">
-        Simulación máxima de 240 periodos.
+        Simulación máxima de 360 periodos.
       </div>
     </div>
   </div>

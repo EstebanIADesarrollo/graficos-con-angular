@@ -4,7 +4,7 @@
 <div class="components-container">
   <div class="form-and-graficos-container">
     <app-formulario (datosSimulacion)="onDatosSimulacion($event)"></app-formulario>
-    <app-graficos></app-graficos>
+    <app-graficos [acumuladoMensual]="acumuladoMensualData" [acumuladoConInteres]="acumuladoConInteresData"></app-graficos>
   </div>
   <app-resultados [acumuladoMensual]="acumuladoMensualData" [acumuladoConInteres]="acumuladoConInteresData"></app-resultados>
 </div>
