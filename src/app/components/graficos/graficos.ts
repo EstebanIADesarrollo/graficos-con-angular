@@ -1,13 +1,10 @@
-import { Component, Input } from '@angular/core';
-import { CommonModule, DecimalPipe } from '@angular/common';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-graficos',
-  imports: [CommonModule, DecimalPipe],
+  imports: [],
   templateUrl: './graficos.html',
   styleUrl: './graficos.css'
 })
 export class Graficos {
-  @Input() acumuladoMensual: number[] = [];
-  @Input() acumuladoConInteres: number[] = [];
 }

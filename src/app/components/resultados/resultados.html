@@ -1,0 +1,16 @@
+<div>
+  <h2>Resultados</h2>
+  <div *ngIf="acumuladoMensual.length > 0" class="resultados-grid-container">
+    <div class="grid-header">Periodo</div>
+    <div class="grid-header">Acumulado Mensual</div>
+    <div class="grid-header">Acumulado con Interés</div>
+    <ng-container *ngFor="let mensual of acumuladoMensual; let i = index">
+      <div class="grid-row">
+        <div>{{ i + 1 }}</div>
+        <div>{{ mensual | number:'1.2-2' }}</div>
+        <div>{{ acumuladoConInteres[i] | number:'1.2-2' }}</div>
+      </div>
+    </ng-container>
+  </div>
+  <p *ngIf="acumuladoMensual.length === 0">No hay datos para mostrar. Por favor, simule en el formulario.</p>
+</div>

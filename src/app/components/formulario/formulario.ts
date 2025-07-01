@@ -1,14 +1,15 @@
 import { Component, signal, Output, EventEmitter } from '@angular/core';
-import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-formulario',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, CommonModule],
   templateUrl: './formulario.html',
   styleUrl: './formulario.css'
 })
 export class Formulario {
-  periodo = signal(new FormControl<number | null>(null));
+  periodo = signal(new FormControl<number | null>(null, Validators.max(240)));
   cuota = signal(new FormControl<number | null>(null));
   tasa = signal(new FormControl<number | null>(null));
 

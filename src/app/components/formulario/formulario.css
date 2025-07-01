@@ -1,9 +1,9 @@
 form {
-  background-color: #018786;
-  color: white;
+  background-color: white; /* Fondo blanco para coincidir con resultados */
+  color: #333; /* Color de texto oscuro para legibilidad */
   padding: 1em;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(23, 43, 77, 0.15);
 }
 
 form div {
@@ -35,5 +35,12 @@ form button {
 
 form button:active {
   transform: translateY(2px); /* Move button down slightly */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Smaller shadow for pressed effect */
+  box-shadow: 0 2px 4px rgba(23, 43, 77, 0.15); /* Smaller shadow for pressed effect */
+}
+
+.error-message {
+  color: #005656; /* Color verde del botón */
+  font-size: 0.8em;
+  padding-top: 1em;
+  font-weight: bold;
 }

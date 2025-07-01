@@ -2,6 +2,9 @@
   <h1>Gráficos</h1>
 </div>
 <div class="components-container">
-  <app-formulario (datosSimulacion)="onDatosSimulacion($event)"></app-formulario>
-  <app-graficos [acumuladoMensual]="acumuladoMensualData" [acumuladoConInteres]="acumuladoConInteresData"></app-graficos>
+  <div class="form-and-graficos-container">
+    <app-formulario (datosSimulacion)="onDatosSimulacion($event)"></app-formulario>
+    <app-graficos></app-graficos>
+  </div>
+  <app-resultados [acumuladoMensual]="acumuladoMensualData" [acumuladoConInteres]="acumuladoConInteresData"></app-resultados>
 </div>

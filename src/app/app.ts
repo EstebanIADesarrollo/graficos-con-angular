@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { Formulario } from './components/formulario/formulario';
 import { Graficos } from './components/graficos/graficos';
+import { Resultados } from './components/resultados/resultados';
 
 @Component({
   selector: 'app-root',
-  imports: [Formulario, Graficos],
+  imports: [Formulario, Graficos, Resultados],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

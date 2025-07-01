@@ -2,6 +2,11 @@
   <div>
     <label for="periodo">Periodo:</label>
     <input id="periodo" type="number" [formControl]="periodo()" placeholder="Periodo en meses">
+    <div *ngIf="periodo().invalid && (periodo().dirty || periodo().touched)" class="error-message">
+      <div *ngIf="periodo().errors?.['max']">
+        Simulación máxima de 240 periodos.
+      </div>
+    </div>
   </div>
   <div>
     <label for="cuota">Cuota:</label>

@@ -28,13 +28,29 @@ h1 {
 
 .components-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: 1fr; /* Ahora solo una columna principal */
   gap: 1rem;
   padding: 0.5em 1em 1em 1em;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.form-and-graficos-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas para formulario y gráficos */
+  gap: 1rem;
+}
+
+app-resultados {
+  grid-column: 1 / -1;
 }
 
  @media (max-width: 768px) {
   .components-container {
     grid-template-columns: 1fr;
+  }
+
+  .form-and-graficos-container {
+    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
   }
 }

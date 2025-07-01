@@ -1,5 +1,14 @@
-p {
+div {
   padding: 1em;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(23, 43, 77, 0.15);
+  background-color: white; /* Fondo blanco para coincidir con resultados */
+}
+
+p {
+  /* Estilos específicos para el párrafo si los necesitas */
+}
+
+p {
+  /* Estilos específicos para el párrafo si los necesitas */
 }
